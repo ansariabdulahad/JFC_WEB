@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        include bootstrap
+        link(rel="stylesheet", href="stylesheets/profile.css")
+        block loadStyle
+        script(src="https://sdk.amazonaws.com/js/aws-sdk-2.1445.0.min.js") 
+        script(src="javascripts/profile.js") 
+        script(src="javascripts/common.js") 
+        block loadScript
+        title Profile Page
+    body(style="background: #f2f2f2")
+        div.sidenav.sidenav-open
+            div.d-flex.flex-column.align-items-center 
+                button.logo-box.mb-3.mt-3 
+                    i(style="font-size: 35px").fa.fa-building
+                h5.company-name.p-0.m-0.text-white
+                p.company-email.text-white.p-0.m-0
+                p.company-mobile.text-white
+        div.section.section-open
+            nav.navbar.navbar-expand-sm.px-3.py-2.bg-white.shadow
+                button.btn.toggler  
+                    i.fa.fa-align-left
+                ul.navbar-nav.w-100.justify-content-end#toolbar 
+            include toast
+            div.mx-4.py-4     
+                block content

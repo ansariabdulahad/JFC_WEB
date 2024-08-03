@@ -1,0 +1,13 @@
+- const video = [{"title" : "Javascript","pic" : "yt/pagi.webp"},{"title" : "ES6 In JavaScript Tutorial","pic" : "yt/es6.webp"},{"title" : "NODE JS TUTORIAL IN HINDI","pic" : "yt/node.webp"},{"title" : "Javascript Projects","pic" : "yt/real.jpg"},]
+div.container.mt-5
+    div.row 
+        h1.mb-3 Youtube Projects 
+        each data of video 
+            div.col-md-3.mb-5
+                .card()
+                    img.card-img-top(src=data.pic alt='Card image cap')
+                    .card-body
+                        h5.card-title=data.title
+                        a.btn.btn-primary.w-100(
+                            href='#'
+                        ) Watch Now

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&family=Poppins:wght@500;600&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.5) 0px 1px 1px 0px, rgba(0, 0, 0, 0.8) 0px 1px 3px 0px !important;
+}
+.navbar-logo {
+  width: 350px;
+}
+.navbar-toggler {
+  background-color: inherit !important;
+}
+.navbar-toggler-span {
+  background-image: inherit !important;
+}
+.navbar-toggler-icon::before {
+  font-family: "FontAwesome" !important;
+  content: "\f038" !important;
+  color: #000 !important;
+  font-size: 30px;
+}
+
+.video-box {
+  width: 100%;
+  height: 680px;
+  position: relative;
+  top: 60px;
+  left: 0;
+  overflow: hidden;
+}
+.box-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.large-header {
+  font-size: 100px !important;
+}
+
+.category-box {
+  position: relative;
+  top: -70px;
+}
+.icon-box {
+  width: 100px;
+  height: 100px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.icon-box i {
+  font-size: 50px !important;
+  color: slateblue;
+}
+.icon-box:hover {
+  background-color: slateblue;
+}
+.icon-box:hover i {
+  color: #fff;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4d5fe3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-group-item {
+  background-color: transparent !important;
+}
+.list-group-item a {
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 20px !important;
+  }
+  .video-box {
+    height: 200px !important;
+  }
+  .large-header {
+    font-size: 20px !important;
+  }
+  .navbar-logo {
+    width: 250px !important;
+  }
+}

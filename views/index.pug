@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        include bootstrap
+        script(src="javascripts/index.js") 
+        link(rel="stylesheet", href="stylesheets/style.css")
+        title Just For Code
+    body 
+        div.container-fluide.p-0
+            nav.navbar.navbar-expand-sm.fixed-top.bg-white
+                div.container 
+                    img.navbar-logo.brand-logo(src="images/LOGO.PNG" alt="")
+                    button.navbar-toggler(data-bs-toggle="collapse" data-bs-target="#myNavbar") 
+                        span.navbar-toggler-icon
+                div.collapse.navbar-collapse#myNavbar 
+                    ul.navbar-nav.w-100.d-flex.justify-content-end 
+                        li.nav-item 
+                            a.nav-link.text-dark.fw-bold(
+                                href="#"
+                                ) Home
+                        li.nav-item 
+                            a.nav-link.text-dark.fw-bold(
+                                href="#footer"
+                                ) About
+                        li.nav-item 
+                            a.nav-link.text-dark.fw-bold(
+                                href="#course"
+                                ) Course
+                        li.nav-item 
+                            a.nav-link.text-dark.fw-bold(
+                                href="#footer"
+                                ) Contact
+                        li.nav-item
+                            a.nav-link.text-dark.fw-bold(
+                                href="https://www.youtube.com/@Justforcode/playlists"
+                                ) 
+                                i.fa-brands.fa-youtube(style="font-size:25px;color:red")
+                        li.nav-item 
+                            a.nav-link.fw-bold(
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#login-modal"
+                                ) Login
+                        li.nav-item 
+                            a.nav-link(
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#student-modal"
+                                ).btn.btn-danger.mx-2.mb-md-0.mb-3.text-white Register
+                        li.nav-item 
+                            a.nav-link(
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#signup-modal"
+                                ).btn.btn-primary.mx-2.text-white Signup
+            
+            include homepage
+            include footer
+            include signup
+            include login
+            include register

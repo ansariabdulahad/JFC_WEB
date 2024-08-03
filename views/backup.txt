@@ -1,0 +1,7 @@
+
+
+each menu of toolbar
+                        li.nav-item
+                            button(class=menu.design).btn.toolbar.mx-2
+                                a(href=menu.link class=menu.design).nav-link 
+                                    i(class=menu.icon)

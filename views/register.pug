@@ -1,0 +1,121 @@
+div.modal.animate__animated.animate__slideInDown.animate__faster#student-modal 
+    div.modal-dialog.modal-dialog-centered.modal-lg
+        div.modal-content  
+            div.modal-body.px-4
+                h4.medium-font Registration Form
+                form#student-form 
+                    div.row 
+                        div.col-md-6 
+                            div.form-group.mb-3
+                                input(
+                                    required
+                                    type="text"
+                                    placeholder="Student Name"
+                                    name="studentName"
+                                    class="form-control input remove-focus"
+                                    value="just"
+                                    )
+                            div.form-group.mb-3
+                                input(
+                                    required
+                                    type="email"
+                                    placeholder="Student Email"
+                                    name="studentEmail"
+                                    class="form-control student-email input remove-focus"
+                                    value="a@gmail.com"
+                                    )
+                            div.form-group.mb-3
+                                input(
+                                    required
+                                    type="text"
+                                    placeholder="Student Father"
+                                    name="studentFather"
+                                    class="form-control input remove-focus"
+                                    value="XYZ"
+                                    )
+                            div.form-group.mb-3
+                                input(
+                                    required
+                                    type="date"
+                                    placeholder="Student Dob"
+                                    name="studentDob"
+                                    class="form-control input remove-focus"
+                                    )
+                            div.form-group.mb-3.d-flex
+                                button.code.btn.btn-light(type="button") (+91) 
+                                input(
+                                    required
+                                    type="number"
+                                    placeholder="Student Mobile"
+                                    name="studentMobile"
+                                    class="form-control input remove-focus"
+                                    value="363693654"
+                                    )
+                        div.col-md-6 
+                            div.form-group.mb-3.d-flex
+                                select.form-select(name="course") 
+                                    option(value="javascript") Javascript
+                                    option(value="nodejs") Node Js
+                                    option(value="react js") React Js
+                                    option(value="php") PHP
+                            div.form-group.mb-3.d-flex
+                                input(
+                                    required
+                                    type="text"
+                                    placeholder="Student Country"
+                                    name="studentCountry"
+                                    class="form-control country input remove-focus"
+                                    value="India"
+                                    )
+                            div.form-group.mb-3.d-flex
+                                input(
+                                    required
+                                    type="text"
+                                    placeholder="Student State"
+                                    name="studentState"
+                                    class="form-control input remove-focus"
+                                    value="UP"
+                                    )
+                            div.form-group.mb-3.d-flex
+                                input(
+                                    required
+                                    type="number"
+                                    placeholder="Student Pincode"
+                                    name="studentPincode"
+                                    class="form-control input remove-focus"
+                                    value="123456"
+                                    )
+                            div.form-group.mb-3.d-flex
+                                textarea(
+                                    required
+                                    placeholder="Student Address"
+                                    name="studentAddress"
+                                    class="form-control input remove-focus"
+                                    value="Lucknow"
+                                ) 
+                            button.btn.btn-primary.add-student-btn.float-end(type="submit") Submit
+                            button.btn.btn-danger.d-none.update-student-btn.float-end(type="button") Update
+                            button.btn.btn-danger.btn-design.d-none.student-loader-btn.float-end(type="button" disabled) 
+                                span.spinner-grow.spinner-grow-sm.mx-2 
+                                span Proccessing...
+div.modal.animate__animated.animate__slideInDown.animate__faster#share-modal 
+    div.modal-dialog.modal-dialog-centered
+        div.modal-content  
+            div.modal-body.px-4
+                h4.medium-font Share Link
+                    div.row 
+                        div.col-md-12 
+                            div.form-group.mb-3
+                                input(
+                                    readonly
+                                    type="text"
+                                    name="link"
+                                    class="form-control link input remove-focus"
+                                    )
+                            div.form-group.mb-3.d-flex
+                                button.btn.icon-btn-info.mx-3#copy-btn
+                                    i.fa.fa-copy 
+                                button.btn.icon-btn-warning#share-email-btn
+                                    i.fa.fa-envelope 
+            div.progress-loader.d-none
+                div.progress-moving

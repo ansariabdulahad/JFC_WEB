@@ -1,0 +1,16 @@
+- const course = [{"title" : "Javascript","price" : "Rs 2000","pic" : "course/javascript.png"},{"title" : "Nodejs","price" : "Rs 3000","pic" : "course/node.png"},{"title" : "PHP","price" : "Rs 2500","pic" : "course/php.png"},{"title" : "ReactJs","price" : "Rs 500/M","pic" : "course/react.png"},]
+div.container.mt-5#course
+    div.row 
+        h1.mb-3 All Trending Courses
+        each data of course 
+            div.col-md-3.mb-5
+                .card()
+                    img.card-img-top(src=data.pic alt='Card image cap')
+                    .card-body
+                        h5.card-title=data.title
+                        p.card-text=data.price
+                        a.btn.btn-primary.w-100(
+                            href='#'
+                            data-bs-toggle="modal"
+                            data-bs-target="#student-modal"
+                        ) Register
